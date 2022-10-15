@@ -1,4 +1,4 @@
-const tabs = console.log(document.querySelectorAll(".tab"));
+const tabs = document.querySelectorAll(".tab")
 
 tabs.forEach(tab => {
     tab.addEventListener("click", function () {

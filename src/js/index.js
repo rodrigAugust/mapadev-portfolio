@@ -18,11 +18,10 @@ function selectTab(tab){
 }
 
 function selectInfo(tab){
-    const infoSelect = document.querySelector("info.select");
+    const infoSelect = document.querySelector(".info.select");
     infoSelect.classList.remove("select");
 
     const idDoElementosDeInformacoes = `info-${tab.id}`
-
-    const infoASerMostrada = document.getElementsById(idDoElementosDeInformacoes);
+    const infoASerMostrada = document.getElementById(idDoElementosDeInformacoes);
     infoASerMostrada.classList.add("select");
 }

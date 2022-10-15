@@ -102,13 +102,15 @@ body {
 }
 
 .info-tab .info {
-    min-height: 260px;
+    max-height: 300px;
     padding: 15px;
     display: none;
+    overflow-y: auto;
 }
 
 .info-tab .info.select {
     display: block;
+    width: 100%;
 }
 
 .info-tab .sub-tutle {
@@ -173,4 +175,33 @@ body {
 
 .social-media .github {
     background-color: #333;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.projects a {
+    display: block;
+    width: 250px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+    overflow-y: auto;
+}
+.projects li a:hover {
+    opacity: 0.5;
+}
+
+.projects .portfolio {
+    background-color: #ff4b4b;
+}
+
+.projects .mapadev{
+    background-color: #00b4b4;
 }
